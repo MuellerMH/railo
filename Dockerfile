@@ -16,8 +16,8 @@ RUN RAILO_VERSION="4.2.1.008" \
 RUN mkdir /var/www \
 	&& mkdir /var/www/tmp
 
-RUN wget -q https://s3-eu-west-1.amazonaws.com/gameserver-cloud-registry/gamecloud_.zip \
-	&& unzip gamecloud_ -d /var/www
+RUN wget -q https://s3-eu-west-1.amazonaws.com/gameserver-cloud-registry/gamecloud_.zip
+RUN unzip gamecloud_ -d /var/www
 
 # nginx config
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
