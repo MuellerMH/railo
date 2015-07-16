@@ -126,7 +126,7 @@
       </Realm>
 
       <Host name="localhost"  appBase="webapps">
-        <Context docBase="/var/www" path=""></Context>
+        <Context docBase="/var/www/default" path=""></Context>
 
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
