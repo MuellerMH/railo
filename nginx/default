@@ -9,12 +9,12 @@ server
 	# don't rewrite for static files
 	location ~* ^.+\.(jpg|jpeg|gif|png|ico|css|zip|tgz|gz|rar|bz2|pdf|txt|tar|wav|bmp|rtf|js|flv|swf|html|htm|map|ttf|woff)$
 	{
-		root   /var/www;
+		root   /var/www/default;
 	}
 
 	location /
 	{
-		root   /var/www;
+		root   /var/www/default;
 		index  index.cfm index.html index.htm;
 		include proxy-params;
 		include cfwheels-rewrite-rules;
